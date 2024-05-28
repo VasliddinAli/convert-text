@@ -28,8 +28,8 @@
             <textarea :value="outputText" readonly></textarea>
         </div>
         <div class="btns">
-            <button @click="convertText">Convert</button>
-            <button @click="revertText">Revert</button>
+            <button @click="convertText">Shifrlash</button>
+            <button @click="revertText">Deshifrlash</button>
         </div>
     </div>
 </template>
@@ -68,7 +68,7 @@ export default {
             ],
             shuffledArrays: {
                 Section1: ["M", "Y", "H", "T", "S", "W", "K", "D", "G", "Q", "J", "F", "Z", "C", "O", "U", "N", "B", "P", "A", "V", "I", "R", "X", "L", "E"],
-                Section2: ["C", "H", "I", "L", "N", "B", "K", "J", "U", "Z", "O", "X", "Q", "Y", "D", "V", "E", "R", "A", "S", "F", "G", "M", "P", "T", "W"],
+                Section2: ["C", "H", "I", "L", "N", "B", "K", "J", "U", "Z", "O", "X", "Q", "Y", "R", "D", "V", "E", "A", "S", "F", "G", "M", "P", "T", "W"],
                 Section3: ["G", "M", "P", "R", "N", "W", "Q", "C", "L", "F", "A", "U", "E", "Z", "K", "J", "T", "B", "H", "S", "O", "X", "Y", "I", "D", "V"]
             },
             selectedSection: '',
