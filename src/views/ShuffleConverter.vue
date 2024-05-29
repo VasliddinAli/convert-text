@@ -3,21 +3,22 @@
         <div class="head">
             <h4 v-for="item in basicArray" :key="item" class="harf">{{ item }}</h4>
         </div>
+        <h5>Kombinatsiyalar</h5>
         <form class="section" @submit.prevent>
             <div>
                 <input id="Section1" type="radio" value="Section1" v-model="selectedSection"
                     @change="selectedSectionChange(shuffledArrays.Section1)" class="sectionInput" />
-                <label for="Section1" class="sectionLabel">Section1</label>
+                <label for="Section1" class="sectionLabel">1</label>
             </div>
             <div>
                 <input id="Section2" type="radio" value="Section2" v-model="selectedSection"
                     @change="selectedSectionChange(shuffledArrays.Section2)" class="sectionInput" />
-                <label for="Section2" class="sectionLabel">Section2</label>
+                <label for="Section2" class="sectionLabel">2</label>
             </div>
             <div>
                 <input id="Section3" type="radio" value="Section3" v-model="selectedSection"
                     @change="selectedSectionChange(shuffledArrays.Section3)" class="sectionInput" />
-                <label for="Section3" class="sectionLabel">Section3</label>
+                <label for="Section3" class="sectionLabel">3</label>
             </div>
         </form>
         <div class="head" v-if="arrayData != null">
@@ -112,13 +113,20 @@ export default {
 </script>
 
 <style scoped>
+h5{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
 .head {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .inputs {
@@ -193,6 +201,7 @@ button {
     width: 100%;
     text-align: center;
     border-radius: 4px;
+    font-weight: bold;
 }
 
 .sectionInput {
