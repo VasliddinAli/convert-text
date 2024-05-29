@@ -1,5 +1,6 @@
 <template>
     <div>
+        <div class="autor">FAYZULLO ABDULAZIZOV</div>
         <div class="head">
             <h4 v-for="item in basicArray" :key="item" class="harf">{{ item }}</h4>
         </div>
@@ -154,12 +155,19 @@ export default {
 </script>
 
 <style scoped>
+.autor {
+    text-align: center;
+    font-weight: bold;
+    color: #fffb00;
+}
+
 h5 {
     padding: 0;
     margin: 0;
     padding-bottom: 20px;
     text-align: center;
     font-size: 20px;
+    color: #d3d3d3
 }
 
 .head {
@@ -169,6 +177,7 @@ h5 {
     gap: 10px;
     padding-bottom: 15px;
     padding-top: 15px;
+    color: #eee;
 }
 
 .inputs {
@@ -202,7 +211,7 @@ h5 {
 .btns button {
     border: 1px solid #d3d3d3;
     background-color: #f5f5f5;
-    padding: 5px 30px;
+    padding: 10px 50px;
     cursor: pointer;
     text-align: center;
     border-radius: 4px;
@@ -215,12 +224,16 @@ h5 {
 }
 
 textarea {
+    background: #E2DFD0;
     display: block;
     width: 100%;
-    height: 100px;
+    height: 200px;
     margin-top: 10px;
     margin-bottom: 10px;
     resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
 }
 
 button {
@@ -244,6 +257,7 @@ button {
     text-align: center;
     border-radius: 4px;
     font-weight: bold;
+    color: #111;
 }
 
 .sectionInput {
